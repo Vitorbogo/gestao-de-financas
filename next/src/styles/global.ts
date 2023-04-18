@@ -7,9 +7,12 @@ export const globalStyles = globalCss({
     boxSizing: 'border-box',
   },
 
+  html: {
+    fontSize: 16,
+  },
+
   body: {
-    backgroundColor: '$gray900',
-    color: '$gray100',
+    backgroundColor: '$gray100',
     '-webkit-font-smoothing': 'antialiased',
   },
 
