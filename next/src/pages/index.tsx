@@ -12,11 +12,15 @@ import Image from 'next/image'
 import LogoImg from '../assets/logo.png'
 import ChatImg from '../assets/chat.svg'
 import {
+  AllWalletWrapper,
   BalanceText,
   FirstRow,
   MainContainer,
   MainContent,
   MainWrapper,
+  NewWalletIcon,
+  NewWalletText,
+  NewWalletWrapper,
   PaymentAction,
   PaymentContent,
   PaymentDiv,
@@ -24,9 +28,15 @@ import {
   TitleContainer,
   TitleDiv,
   TopDiv,
+  WalletCardRow,
+  WalletDescription,
+  WalletHeader,
   WalletInfo,
   WalletInfoTitle,
   WalletInfoTitleText,
+  WalletProgressStatusWrapper,
+  WalletTitleDiv,
+  WalletWrapper,
 } from '@/styles/pages'
 
 export default function Home() {
@@ -104,6 +114,70 @@ export default function Home() {
                 </PaymentDiv>
               </PaymentAction>
             </FirstRow>
+            <AllWalletWrapper>
+              <WalletCardRow>
+                <WalletWrapper>
+                  <WalletHeader>
+                    <WalletTitleDiv>Imagem TITULO</WalletTitleDiv>
+                    <WalletDescription>DESCRIÇÃO</WalletDescription>
+                  </WalletHeader>
+                  <WalletProgressStatusWrapper>
+                    status bar
+                  </WalletProgressStatusWrapper>
+                </WalletWrapper>
+                <WalletWrapper>
+                  <WalletHeader>
+                    <WalletTitleDiv>Imagem TITULO</WalletTitleDiv>
+                    <WalletDescription>DESCRIÇÃO</WalletDescription>
+                  </WalletHeader>
+                  <WalletProgressStatusWrapper>
+                    status bar
+                  </WalletProgressStatusWrapper>
+                </WalletWrapper>
+                <WalletWrapper>
+                  <WalletHeader>
+                    <WalletTitleDiv>Imagem TITULO</WalletTitleDiv>
+                    <WalletDescription>DESCRIÇÃO</WalletDescription>
+                  </WalletHeader>
+                  <WalletProgressStatusWrapper>
+                    status bar
+                  </WalletProgressStatusWrapper>
+                </WalletWrapper>
+              </WalletCardRow>
+              <WalletCardRow>
+                <WalletWrapper>
+                  <WalletHeader>
+                    <WalletTitleDiv>Imagem TITULO</WalletTitleDiv>
+                    <WalletDescription>DESCRIÇÃO</WalletDescription>
+                  </WalletHeader>
+                  <WalletProgressStatusWrapper>
+                    status bar
+                  </WalletProgressStatusWrapper>
+                </WalletWrapper>
+                <WalletWrapper>
+                  <WalletHeader>
+                    <WalletTitleDiv>Imagem TITULO</WalletTitleDiv>
+                    <WalletDescription>DESCRIÇÃO</WalletDescription>
+                  </WalletHeader>
+                  <WalletProgressStatusWrapper>
+                    status bar
+                  </WalletProgressStatusWrapper>
+                </WalletWrapper>
+                <WalletWrapper>
+                  <WalletHeader>
+                    <WalletTitleDiv>Imagem TITULO</WalletTitleDiv>
+                    <WalletDescription>DESCRIÇÃO</WalletDescription>
+                  </WalletHeader>
+                  <WalletProgressStatusWrapper>
+                    status bar
+                  </WalletProgressStatusWrapper>
+                </WalletWrapper>
+              </WalletCardRow>
+              <NewWalletWrapper>
+                <NewWalletIcon>+</NewWalletIcon>
+                <NewWalletText>Criar Nova Carteira</NewWalletText>
+              </NewWalletWrapper>
+            </AllWalletWrapper>
           </MainContent>
         </MainContainer>
       </MainWrapper>
