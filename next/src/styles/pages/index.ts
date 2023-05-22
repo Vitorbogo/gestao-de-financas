@@ -4,14 +4,14 @@ export const MainWrapper = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'flex-end',
-  width: '100%',
 })
 
 export const MainContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  width: '100%',
+  width: '80vw',
   flex: '1',
+  backgroundColor: '#fff',
 })
 
 export const TopDiv = styled('div', {
@@ -39,7 +39,6 @@ export const TitleContainer = styled('div', {
   padding: '36px 48px',
   gap: '95px',
   height: '140px',
-  backgroundColor: '#FFFFFF',
 })
 
 export const TitleDiv = styled('div', {
@@ -47,7 +46,6 @@ export const TitleDiv = styled('div', {
   flexDirection: 'column',
   alignItems: 'flex-start',
   gap: '8px',
-  width: '383px',
   height: '68px',
 })
 
@@ -84,36 +82,31 @@ export const FirstRow = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'flex-start',
-  margin: '0px 24px 0px 24px',
+  margin: '10px 24px 0px 24px',
   gap: '24px',
-  border: '1px solid #000',
 })
 
 export const WalletInfo = styled('div', {
-  boxSizing: 'border-box',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
   padding: '16px 24px',
   gap: '21px',
-  width: '50%',
-  height: '160px',
-  backgroundColor: '#FFFFFF',
-  border: '1px solid #E2E8F0',
   boxShadow:
     '0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06)',
   borderRadius: '6px',
-  flex: 'none',
-  order: '0',
-  flexGrow: '0',
+
+  height: '160px',
+  width: '50%',
+  flexGrow: '1',
 })
 
 export const WalletInfoTitle = styled('div', {
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
-  padding: '0px',
   gap: '16px',
+  flexGrow: '1',
 })
 
 export const WalletInfoTitleText = styled('h3', {
@@ -123,10 +116,10 @@ export const WalletInfoTitleText = styled('h3', {
   fontSize: '24px',
   lineHeight: '30px',
   color: '#121212',
+  flexGrow: '1',
 })
 
 export const BalanceText = styled('h3', {
-  width: '572px',
   height: '40px',
   fontFamily: 'Inter',
   fontStyle: 'normal',
@@ -146,15 +139,13 @@ export const PaymentAction = styled('div', {
   padding: '30px 24px',
   gap: '58px',
   isolation: 'isolate',
-  width: '400px',
+  width: '50%',
   height: '160px',
   backgroundColor: '#FFFFFF',
   border: '1px solid #E2E8F0',
   boxShadow:
     '0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06)',
   borderRadius: '6px',
-  flex: 'none',
-  order: '1',
   flexGrow: '1',
 })
 
@@ -190,9 +181,7 @@ export const AllWalletWrapper = styled('div', {
   flexDirection: 'column',
   alignItems: 'flex-start',
   gap: '16px',
-  width: '1054px',
   height: '340px',
-  order: '1',
   margin: '0px 24px 0px 24px',
 })
 
@@ -202,11 +191,7 @@ export const WalletCardRow = styled('div', {
   alignItems: 'flex-start',
   padding: '0px',
   gap: '16px',
-  width: '1044px',
   height: '162px',
-  flex: 'none',
-  order: '0',
-  flexGrow: '0',
 })
 
 export const WalletWrapper = styled('div', {
@@ -220,7 +205,6 @@ export const WalletWrapper = styled('div', {
   border: '1px solid #E2E8F0',
   boxShadow: '0px 1px 2px rgba(16, 24, 40, 0.05)',
   borderRadius: '6px',
-  flexGrow: '1',
 })
 
 export const WalletHeader = styled('div', {
@@ -229,9 +213,7 @@ export const WalletHeader = styled('div', {
   alignItems: 'flex-start',
   padding: '0px',
   gap: '8px',
-  width: '289px',
   height: '58px',
-  alignSelf: 'stretch',
 })
 
 export const WalletTitleDiv = styled('div', {
