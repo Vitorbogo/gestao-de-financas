@@ -67,5 +67,3 @@ class UserInfo(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False, unique=True)
     monthly_revenue = models.FloatField()
-    
-    
