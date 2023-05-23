@@ -61,3 +61,11 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}"
     
+
+class UserInfo(models.Model):
+    """Database mode for users info"""
+
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False, unique=True)
+    monthly_revenue = models.FloatField()
+    
+    
