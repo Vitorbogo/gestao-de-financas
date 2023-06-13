@@ -6,7 +6,6 @@ from rest_framework import status
 
 from gestao_financas.serializers import RevenueSerializer, RevenueCategorySerializer, ExpenseSerializer, ExpenseCategorySerializer
 from gestao_financas.models import Revenue, RevenueCategory, Expense, ExpenseCategory
-
 from common.response_helper import responseHelper
 
 
@@ -88,12 +87,13 @@ class RevenueCategoryView(ViewSet):
 
     def get_queryset(self, pk: str = None):
         if not pk:
-            return RevenueCategory.objects.filter(user_id=self.request.user.id) 
-        return RevenueCategory.objects.get(user_id=self.request.user.id, pk=pk)
+            return RevenueCategory.objects.all() 
+        return RevenueCategory.objects.get(pk=pk)
     
     def list(self, request: Request):
-        revenue_categorys = self.get_queryset()
-        serializer = RevenueCategorySerializer(revenue_categorys)
+        # revenue_categorys = self.get_queryset()
+        queryset= RevenueCategory.objects.all()
+        serializer = RevenueCategorySerializer(queryset, many=True)
         return responseHelper.json_success_response(serializer.data,
                                                     "Receitas retornadas com sucesso!",
                                                     len(serializer.data))
