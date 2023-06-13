@@ -39,6 +39,7 @@ export const TitleContainer = styled('div', {
   padding: '36px 48px',
   gap: '95px',
   height: '140px',
+  justifyContent: 'space-between',
 })
 
 export const TitleDiv = styled('div', {

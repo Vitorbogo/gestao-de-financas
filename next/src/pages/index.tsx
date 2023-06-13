@@ -1,15 +1,5 @@
-import {
-  LogoWrapper,
-  MenuItemText,
-  MenuItemWrapper,
-  MenuItemsContainer,
-  MenuItemsWrapper,
-  MenuSettingsWrapper,
-  SideBar,
-} from '@/styles/components/sidebar'
 import Head from 'next/head'
 import Image from 'next/image'
-import LogoImg from '../assets/logo.png'
 import ChatImg from '../assets/chat.svg'
 import {
   AllWalletWrapper,
@@ -38,6 +28,7 @@ import {
   WalletTitleDiv,
   WalletWrapper,
 } from '@/styles/pages'
+import SideBarComponent from '@/styles/components/sidebar'
 
 export default function Home() {
   return (
@@ -49,37 +40,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <MainWrapper>
-        <SideBar>
-          <MenuItemsWrapper>
-            <LogoWrapper>
-              <Image src={LogoImg} alt='Bongo Finance' width={80} height={80} />
-            </LogoWrapper>
-            <MenuItemsContainer>
-              <MenuItemWrapper>
-                <Image src={ChatImg} alt='Chat' width={30} height={30} />
-                <MenuItemText>Carteira</MenuItemText>
-              </MenuItemWrapper>
-              <MenuItemWrapper>
-                <Image src={ChatImg} alt='Chat' width={30} height={30} />
-                <MenuItemText>Cartões</MenuItemText>
-              </MenuItemWrapper>
-              <MenuItemWrapper>
-                <Image src={ChatImg} alt='Chat' width={30} height={30} />
-                <MenuItemText>Transações</MenuItemText>
-              </MenuItemWrapper>
-            </MenuItemsContainer>
-          </MenuItemsWrapper>
-          <MenuSettingsWrapper>
-            <MenuItemWrapper>
-              <Image src={ChatImg} alt='Chat' width={30} height={30} />
-              <MenuItemText>Configurações</MenuItemText>
-            </MenuItemWrapper>
-            <MenuItemWrapper>
-              <Image src={ChatImg} alt='Chat' width={30} height={30} />
-              <MenuItemText>Eduardo Ayr</MenuItemText>
-            </MenuItemWrapper>
-          </MenuSettingsWrapper>
-        </SideBar>
+        <SideBarComponent />
         <MainContainer>
           <TopDiv></TopDiv>
           <TitleContainer>
