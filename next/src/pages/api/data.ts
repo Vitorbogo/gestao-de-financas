@@ -12,9 +12,9 @@ const fetchData = async (
 ) => {
   try {
     const response: AxiosResponse = await axios.get(
-      'http://localhost:8000/end-point'
+      'http://127.0.0.1:8000/api/'
     )
-    const data = response.data
+    const data = response
     res.status(200).json({ message: 'Success', data })
   } catch (error) {
     console.error(error)

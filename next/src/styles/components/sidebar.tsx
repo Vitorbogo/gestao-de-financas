@@ -1,4 +1,7 @@
 import { styled } from '@stitches/react'
+import LogoImg from '@/assets/logo.png'
+import ChatImg from '@/assets/chat.svg'
+import Image from 'next/image'
 
 export const SideBar = styled('div', {
   display: 'flex',
@@ -77,3 +80,39 @@ export const MenuItemText = styled('span', {
   order: 1,
   flexGrow: 0,
 })
+
+export default function SideBarComponent() {
+  return (
+    <SideBar>
+      <MenuItemsWrapper>
+        <LogoWrapper>
+          <Image src={LogoImg} alt='Bongo Finance' width={80} height={80} />
+        </LogoWrapper>
+        <MenuItemsContainer>
+          <MenuItemWrapper>
+            <Image src={ChatImg} alt='Chat' width={30} height={30} />
+            <MenuItemText>Carteira</MenuItemText>
+          </MenuItemWrapper>
+          <MenuItemWrapper>
+            <Image src={ChatImg} alt='Chat' width={30} height={30} />
+            <MenuItemText>Cartões</MenuItemText>
+          </MenuItemWrapper>
+          <MenuItemWrapper>
+            <Image src={ChatImg} alt='Chat' width={30} height={30} />
+            <MenuItemText>Transações</MenuItemText>
+          </MenuItemWrapper>
+        </MenuItemsContainer>
+      </MenuItemsWrapper>
+      <MenuSettingsWrapper>
+        <MenuItemWrapper>
+          <Image src={ChatImg} alt='Chat' width={30} height={30} />
+          <MenuItemText>Configurações</MenuItemText>
+        </MenuItemWrapper>
+        <MenuItemWrapper>
+          <Image src={ChatImg} alt='Chat' width={30} height={30} />
+          <MenuItemText>Eduardo Ayr</MenuItemText>
+        </MenuItemWrapper>
+      </MenuSettingsWrapper>
+    </SideBar>
+  )
+}
